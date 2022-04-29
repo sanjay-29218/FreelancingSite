@@ -1,0 +1,53 @@
+
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div id="code"></div>
+                <div class="overview">
+                    <input type="hidden" value="{{ gig._id }}" id="gig_id" />
+                    <div class="template-card">
+                        <div class="name">
+                            <h4>NAME: {{gig.ownername}}</h4>
+                            <h2 class="h2-size">{{gig.title}}</h2>
+                            <hr />
+                            <img src="{{gig.picture}}" class="image-test">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview">
+                    <div class="about-card">
+                        <div class="name">
+                            <h2 class="h2-size">ABOUT JOBS</h2>
+                            <hr />
+                            <h4>{{gig.about}}</h4>
+                            
+                            <h4>{{req.params.name}}</h4>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="overview">
+                <div class="order-card" style="margin: 10px;">
+                    <div class="name">
+                        <h3>${{gig.price}} Order Details</h3>
+                        <a href="/checkout/single-package/{{gig._id}}" class="btn btn-success btn-lg" style="margin-right:10px ;">
+                            Proceed to order
+                        </a>
+                        <a href="/users/:userId/orders/:orderId" class="btn btn-success btn-lg " style= "margin-right: 2px;">
+                            Chat
+                        </a>
+
+                        <button class="btn btn-success btn-lg space-left" id="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>

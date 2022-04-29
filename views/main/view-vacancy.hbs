@@ -1,0 +1,29 @@
+
+	
+	
+
+<div class="container section">
+	<h1>
+		View Vacancies
+	</h1>
+		
+		{{#each vacancy}}
+		<div class="col-md-3">
+			<div class="gig-card">
+				<a href="/vacancy_detail/{{ _id }}">
+					<img src="/img/copywrite.jpg" />
+					<h4>{{title}}</h4>
+					<h3>${{price}}</h3>
+				</a>
+				{{!-- <div class="edit_delete" >
+				<a href = "/edit_vacancy/{{_id}}"><i  class = "fa fa-pencil fa-lg " aria-hidden = "true" ></i> Edit </a>
+				<a href="/del_vacancy/{{_id}}"> <i  class = " fa fa-trash fa-lg"  aria-hidden= "true"></i> delete </a>
+
+				</div> --}}
+			</div>
+		</div>
+		{{/each}}
+		
+	</div>
+  
+</div>

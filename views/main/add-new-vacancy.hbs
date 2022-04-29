@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="overview">
+                <div class="text-center">Enter your Vacancy details</div>
+                <br>
+                <div class="new-gig-card">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>JOB TITLE</label>
+                            <input type="text" class="form-control" placeholder="I am looking for ..." required name="vacancy_title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Job price</label>
+                            <input type="number" class="form-control" placeholder="Please enter price you want to set" required name="vacancy_price">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Job Category</label>
+                            <select required name="vacancy_category" class="form-control">
+                                <option>Programming</option>
+                                <option>Website</option>
+                                <option>Design</option>
+                                <option>Marketing</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                         <div class="form-group input-group-lg">
+                            <label>Required Files </label>
+                            <input type="file" class="form-control" placeholder="" name="vacancy_file">
+                        </div>
+
+                        <div class="form-group input-group-lg">
+                            <label>JOB Criteria </label>
+                            <input type="text" class="form-control" placeholder="Describe your Criteria" name="vacancy_about">
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-lg"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

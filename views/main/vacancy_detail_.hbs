@@ -1,0 +1,46 @@
+
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div id="code"></div>
+                <div class="overview">
+                    <input type="hidden" value="{{ vacancy._id }}" id="vacancy_id" />
+                    <div class="template-card">
+                        <div class="name">
+                            <h2 class="h2-size">{{vacancy.title}}</h2>
+                            <hr />
+                            <img src="{{vacancy.picture}}" class="image-test">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview">
+                    <div class="about-card">
+                        <div class="name">
+                            <h2 class="h2-size">Requirements vacancy</h2>
+                            <hr />
+                            <h4>{{vacancy.about}}</h4>
+                            <h4>{{vacancy.owner.name}}</h4>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="overview">
+                <div class="order-card" style="margin: 10px;">
+                    <div class="name">
+                        <h3>${{vacancy.price}} Order Details</h3>
+                        
+
+                        {{!-- <button class="btn btn-success btn-lg space-left" id="add_to_cart"><i class="fa fa-shopping-cart"></i></button> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>

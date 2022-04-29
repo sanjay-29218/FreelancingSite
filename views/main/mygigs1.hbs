@@ -1,0 +1,28 @@
+
+	
+	
+
+<div class="container section">
+	<h1>
+		MY Gigs
+	</h1>
+		
+		{{#each gigs}}
+		<div class="col-md-3">
+			<div class="gig-card">
+				<a href="/service_detail_/{{ _id }}">
+					<img src="/img/copywrite.jpg" />
+					<h4>{{title}}</h4>
+					<h3>${{price}}</h3>
+				</a>
+				<div class="edit_delete" >
+				<a href="/edit_gigs/{{_id}}"><button type="submit" class="edit">Edit</button></a>
+				<a href="/del_gigs/{{_id}}"><button type="submit" class="delete">Delete</button></a>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+		
+	</div>
+  
+</div>
